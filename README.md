@@ -4,7 +4,7 @@
 需要做一个适配edge浏览器的扩展
 
 食用方式：
-1.
+1.点击edge浏览器右上角
 
 <img width="780" height="506" alt="image" src="https://github.com/user-attachments/assets/846f0919-14b1-470b-bb16-195072d0e2fe" />
 
