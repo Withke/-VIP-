@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>视频解析助手</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+        width: 320px;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+      }
+      .card {
+        padding: 12px 12px 14px;
+        margin: 10px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      .title { font-size: 16px; font-weight: 600; }
+      .subtitle { font-size: 12px; color: #666; }
+      label { font-size: 14px; color: #000; font-weight: 600; }
+      select, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 1px solid #d0d7de;
+        background: #fff;
+      }
+      select { color: #000; font-size: 14px; border-color: #cbd5e1; }
+      button {
+        border: none;
+        background: #2563eb;
+        color: #fff;
+        font-weight: 600;
+      }
+      button.secondary { background: #475569; }
+      button[disabled] { opacity: 0.6; cursor: not-allowed; }
+      .row { margin-top: 8px; }
+      #route { margin-top: 8px; color: #333; }
+      .chip {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        font-size: 12px;
+        color: #334155;
+        margin-left: 6px;
+      }
+      #msg { margin-top: 10px; min-height: 18px; color: #c00; font-size: 12px; }
+      .hint { font-size: 12px; color: #666; margin-top: 6px; }
+      .options { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+      .checkbox { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #333; }
+      .footer { margin-top: 10px; font-size: 12px; color: #64748b; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <div class="title">视频解析助手</div>
+        <div class="subtitle">一键切线路，秒开解析</div>
+      </div>
+
+      <label for="platform">视频平台选择</label>
+      <select id="platform">
+        <option value="">选择观影源</option>
+        <option value="https://www.iqiyi.com/">爱奇艺</option>
+        <option value="https://www.youku.com/">优酷</option>
+        <option value="https://v.qq.com/">腾讯视频</option>
+      </select>
+      <div class="hint">选择平台后扩展自动打开对应网站，打开后弹窗关闭。</div>
+
+      <div id="route">当前线路：<span class="chip" id="routeChip">未选择</span></div>
+      <div class="row">
+        <button id="toggle" class="secondary">切换解析线路</button>
+      </div>
+      <div class="row">
+        <button id="parse" disabled>解析当前页</button>
+      </div>
+      <div class="options">
+        <label class="checkbox" title="开启后，解析成功后自动关闭弹窗">
+          <input type="checkbox" id="autoClose" />
+          解析后自动关闭弹窗
+        </label>
+      </div>
+
+      <div id="msg" aria-live="polite"></div>
+      <div class="footer">制作者：精神八爪鱼</div>
+    </div>
+
+    <script src="popup.js" defer></script>
+  </body>
+  </html>

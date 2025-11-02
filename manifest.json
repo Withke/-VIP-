@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "视频解析助手",
+  "version": "0.1.1",
+  "description": "解析当前视频页到指定线路，支持平台快捷打开与线路切换。",
+  "action": {
+    "default_title": "视频解析",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "activeTab", "storage"]
+}
