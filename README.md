@@ -4,17 +4,28 @@
 需要做一个适配edge浏览器的扩展
 
 食用方式：
-1.右上角点击管理扩展
+1.
+
 <img width="780" height="506" alt="image" src="https://github.com/user-attachments/assets/846f0919-14b1-470b-bb16-195072d0e2fe" />
+
 2.打开开发者选项
+
 <img width="331" height="524" alt="image" src="https://github.com/user-attachments/assets/58300e99-0d97-48f4-a950-21e640c9e975" />
+
 3.在这里把解压后的文件夹选中
+
 <img width="197" height="40" alt="image" src="https://github.com/user-attachments/assets/b804b2bc-a8c1-49e2-8d2b-dc089bf5ccf0" />
+
 4.开启扩展，点击视频解析助手
+
 <img width="473" height="355" alt="image" src="https://github.com/user-attachments/assets/0324af60-7673-4877-8e92-060579f67ef7" />
+
 5.选择你想看平台，进去选择电视或者电影
+
 <img width="400" height="493" alt="image" src="https://github.com/user-attachments/assets/82cda9b0-e2bd-4d34-9798-8ed402d8e9e0" />
+
 6.开始看广告的时候点击解析当页
+
 <img width="1920" height="932" alt="image" src="https://github.com/user-attachments/assets/0d0968f6-938a-4f7e-9928-7e4c5ab0f8de" />
 
 代码已上传，可以自行添加修改观影源与平台
